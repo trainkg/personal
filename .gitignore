@@ -1,0 +1,10 @@
+###忽略eclipse 文件
+
+use case/*/.settings
+use case/*/.project
+use case/*/.metadata
+use case/*/RemoteSystemsTempFiles/
+
+###忽略MAVNE TARGET 文件
+
+use case/*/target/
