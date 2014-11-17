@@ -19,19 +19,10 @@ import com.wiket.web.CHomePage;
 public class CApplication extends WebApplication {
 	private Logger log = LoggerFactory.getLogger(getClass());
 	
-	@Override
-	protected void init() {
-		super.init();
-	}
 
 	@Override
 	public Class<? extends Page> getHomePage() {
 		return CHomePage.class;
 	}	
-
-	@Override
-	public Session newSession(Request paramRequest, Response paramResponse) {
-		return null;
-	}
 
 }

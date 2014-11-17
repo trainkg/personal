@@ -17,12 +17,12 @@
     </filter>
     <filter-mapping>
         <filter-name>chapter1</filter-name>
-        <url-pattern>/flt/*</url-pattern>
+        <url-pattern>/*</url-pattern>
     </filter-mapping>
   <!-- wicket start //-->
   
   <!-- servlet start -->
-  <servlet>
+  <!-- <servlet>
 		<servlet-name>HelloWorldServlet</servlet-name>
 		<servlet-class>com.wiket.web.HelloWorldServlet</servlet-class>
 	</servlet>
@@ -30,9 +30,9 @@
 	<servlet-mapping>
 		<servlet-name>HelloWorldServlet</servlet-name>
 		<url-pattern>/hw/*</url-pattern>
-	</servlet-mapping>
+	</servlet-mapping> -->
 	
-	<servlet>
+	<!-- <servlet>
 		<servlet-name>ServletTest</servlet-name>
 		<servlet-class>org.apache.wicket.protocol.http.WicketServlet</servlet-class>
 		<init-param>
@@ -45,6 +45,6 @@
 	<servlet-mapping>
 		<servlet-name>ServletTest</servlet-name>
 		<url-pattern>/hw1/*</url-pattern>
-	</servlet-mapping>
+	</servlet-mapping> -->
   <!-- servlet start //-->
 </web-app>
