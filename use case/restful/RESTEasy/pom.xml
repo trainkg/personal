@@ -5,6 +5,13 @@
     <artifactId>resetful</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
+  <dependencies>
+  	 <dependency>
+         <groupId>org.jboss.resteasy</groupId>
+         <artifactId>resteasy-crypto</artifactId>
+         <version>3.0.9.Final</version>
+     </dependency>
+  </dependencies>
   <artifactId>RESTEasy</artifactId>
   <packaging>war</packaging>
 </project>
