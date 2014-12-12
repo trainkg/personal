@@ -22,7 +22,7 @@
     	
     	<!-- 自动装配 servlet 3.0 无需设置 -->
 	    
-    	<context-param> 
+    	<!-- <context-param> 
            <param-name>resteasy.resources</param-name> 
            <param-value>com.zsq.chapter1.Service1</param-value> 
 	    </context-param> 
@@ -41,6 +41,23 @@
 	    <servlet-mapping>
 	        <servlet-name>Resteasy</servlet-name>
 	        <url-pattern>/*</url-pattern>
-	    </servlet-mapping>
+	    </servlet-mapping> -->
+	    
+	    
+	    
+	    <!-- spring mvc  -->
+	    <servlet>
+			<servlet-name>springmvc</servlet-name>
+			<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+			<init-param>
+				<param-name>contextConfigLocation</param-name>
+				<param-value>classpath:springmvc-servlet.xml</param-value>
+			</init-param>
+		</servlet>
+	
+		<servlet-mapping>
+			<servlet-name>springmvc</servlet-name>
+			<url-pattern>/contacts/*</url-pattern>
+		</servlet-mapping>
 	    
 </web-app>
