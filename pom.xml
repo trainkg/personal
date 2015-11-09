@@ -6,5 +6,6 @@
   <packaging>pom</packaging>
   <modules>
   	<module>chapter-1</module>
+  	<module>zookeeper</module>
   </modules>
 </project>
