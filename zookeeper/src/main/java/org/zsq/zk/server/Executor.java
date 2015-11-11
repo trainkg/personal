@@ -37,6 +37,7 @@ public class Executor
             String exec[]) throws KeeperException, IOException {
         this.filename = filename;
         this.exec = exec;
+        //zookeeper 负责连接
         zk = new ZooKeeper(hostPort, 3000, this);
         dm = new DataMonitor(zk, znode, null, this);
     }
@@ -45,6 +46,12 @@ public class Executor
      * @param args
      */
     public static void main(String[] args) {
+    	args = new String[]{
+    		"127.0.0.1:2181",
+    		"/test",
+    		"fileName",
+    		"cmd"
+    	};
         if (args.length < 4) {
             System.err
                     .println("USAGE: Executor hostPort znode filename program [args ...]");
