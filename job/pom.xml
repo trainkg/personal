@@ -1,0 +1,45 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.zsq</groupId>
+  <artifactId>zsq.job</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <description>Distributed task scheduling system elastic-job user case</description>
+<parent>
+   	<groupId>org.springframework.boot</groupId>
+   	<artifactId>spring-boot-starter-parent</artifactId>
+   	<version>1.3.0.RELEASE</version>
+</parent>
+  <modules>
+  	<module>job.core</module>
+  	<module>zsq.job.core</module>
+  </modules>
+  <profiles>
+		<profile>
+			<id>JDK1.7</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+				<jdk>1.7</jdk>
+			</activation>
+			<properties>
+				<maven.compiler.source>1.7</maven.compiler.source>
+				<maven.compiler.target>1.7</maven.compiler.target>
+				<maven.compiler.compilerVersion>1.7</maven.compiler.compilerVersion>
+			</properties>
+		</profile>
+	</profiles>
+  <dependencies>
+  	<!-- 引入elastic-job核心模块 -->
+	<dependency>
+	    <groupId>com.dangdang</groupId>
+	    <artifactId>elastic-job-core</artifactId>
+	    <version>1.0.2</version>
+	</dependency>
+	<!-- 使用springframework自定义命名空间时引入 -->
+	<dependency>
+	    <groupId>com.dangdang</groupId>
+	    <artifactId>elastic-job-spring</artifactId>
+	    <version>1.0.2</version>
+	</dependency>
+  </dependencies>
+</project>

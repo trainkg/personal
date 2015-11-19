@@ -49,7 +49,7 @@ public class Executor
     	args = new String[]{
     		"127.0.0.1:2181",
     		"/test",
-    		"fileName",
+    		"zhuyy",
     		"cmd"
     	};
         if (args.length < 4) {
