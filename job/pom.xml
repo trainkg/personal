@@ -11,7 +11,6 @@
    	<version>1.3.0.RELEASE</version>
 </parent>
   <modules>
-  	<module>job.core</module>
   	<module>zsq.job.core</module>
   </modules>
   <profiles>
